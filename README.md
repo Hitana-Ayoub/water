@@ -7,14 +7,17 @@
 - collected data
 
 3) Schedule
+
 February 2019
 mining tweets (French and Arabic) using Twitter api\
 Pre-processing of the data (urls, extract place names from the tweet text, etc.)
 
 March 2019
 Natural language processing of French text using regular expressions, nltk, wrod2vec 
+text classification
 
 4) References
+
 Nltk library:
 https://www.nltk.org/book
 
