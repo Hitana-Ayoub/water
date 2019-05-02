@@ -39,11 +39,11 @@ def appendCSV(apidata,file,ids_list=[],cities_list=[]):
     return nbr, unkn
 
 # access token of twitter api (add your account key and token)
-consumer_key = "???"
-consumer_secret = "???"
-access_token = "???"
-access_token_secret = "???"
-
+# add your access token and account keys
+consumer_key =
+consumer_secret =
+access_token =
+access_token_secret =
 
 # Creating the authentication object
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -54,24 +54,29 @@ api = tweepy.API(auth)
 
 #### Search in for keywords in french
 query = "eau potable"
+#query = ""
 
 # Language code (follows ISO 639-1 standards)
 language = "fr"
+#language = "jp"
 
 # localisation
-loc = "33.339922,10.495868,400km" #Medenine + 400km
+loc = "33.339922,10.495868,400km" # Center: Medenine, radius: 400km
+#loc = "35.6586111111,139.745555556,600km" # Center: Tokyo, radius: 600km
 
 # Calling the user_timeline function with our parameters
 results = api.search(q=query, lang=language, geocode=loc, count=1000,tweet_mode='extended')
+#results = api.search()
+#results = api.search(lang=language, geocode=loc, count=1000, tweet_mode='extended')
 
 # Open/Create a file to append data
 file = open('/Users/basho/fadouaproject/SafeWater/files/twData.csv', 'a')
+#file = open('/Users/basho/fadouaproject/SafeWater/files/test.csv', 'a')
 #Use csv Writer
 writer = csv.writer(file)
 
 # searching for tweets with parameters
 nbr, unkn= appendCSV(results,writer,ids,cities)
-
 
 print("The number of tweet saved is ",nbr)
 print("The number of non-identified locations ",unkn)
@@ -85,7 +90,7 @@ query = "ماء الشرب"
 language = "ar"
 
 # localisation
-loc = "33.339922,10.495868,500km" #Medenine + 400km
+#loc = "33.339922,10.495868,500km" #Medenine + 400km
 
 # searching for tweets with parameters
 results = api.search(q=query, lang=language, geocode=loc, count=1000, tweet_mode='extended')

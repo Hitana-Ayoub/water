@@ -1,7 +1,7 @@
 ###
 # Created on Mar. 05, 2019
 # Author: Fadoua Ghourabi (fadouaghourabi@gmail.com, https://github.com/Fadouagh )
-# This code study the collected tweets by performing analysis.
+# This code study the collected tweets by performing basic analysis.
 ###
 
 import pandas as pd

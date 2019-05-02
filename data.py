@@ -13,7 +13,7 @@ cities_path = os.path.join("/Users/basho/fadouaproject/SafeWater/files", "Tunisi
 data = pd.read_csv(cities_path, index_col=False)
 
 
-cities = data.Municipality.tolist()
+cities = data.Municipality.tolist() # amazon turk?
 
 
 
