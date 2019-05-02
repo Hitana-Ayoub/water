@@ -24,7 +24,7 @@ April 2019
 
 May 2019
 
-- 
+- Ayoub Hitana has joined the team
 
 4) References
 
