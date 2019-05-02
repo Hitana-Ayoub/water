@@ -24,7 +24,8 @@ April 2019
 
 May 2019
 
-- 
+- design 
+- goal setting
 
 4) References
 
