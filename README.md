@@ -16,7 +16,15 @@ February 2019
 March 2019
 
 - Natural language processing of French text using regular expressions, nltk, wrod2vec 
-- text classification
+
+April 2019
+
+- Recruiting new member
+- Collecting more data
+
+May 2019
+
+- 
 
 4) References
 
